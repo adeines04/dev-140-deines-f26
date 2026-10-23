@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f6;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #80669d;
+}
+
+p {
+    margin: 8px 0;
+    padding: 0;
+    border: none;
+}
+
+#page-title {
+    margin: 0 0 16px;
+    padding: 12px;
+    border-bottom: 2px solid #967bb6;
+}
+
+.content-card {
+    margin: 16px;
+    padding: 20px;
+    border: 1px solid #e0e0e8;
+    background-color: #ffffff;
+}

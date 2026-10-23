@@ -1,44 +1,16 @@
 <!DOCTYPE html>
-<!--
-  ============================================================
-  DEV.140 Homework 1: My First Web Page (Template)
-  ============================================================
-  This template gives you an OUTLINE. You write the HTML.
-  Each comment describes what belongs there and which element
-  to consider.
-
-  YOUR PAGE MUST HAVE:
-  - At least 5 DIFFERENT semantic elements
-    (header, nav, main, section, article, figure, footer, p, ul/ol...)
-  - Exactly ONE <h1>, <h2> for sections, <h3> for subsections.
-    Never skip a level, and never pick a heading for its size.
-  - At least one <img> with DESCRIPTIVE alt text
-  - At least one <ul> or <ol> used for real list content
-  - A descriptive <title>
-  No CSS this week. Structure and meaning only.
-  ============================================================
--->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Allison</title>
-    <!-- TODO: Add a <title> that describes YOUR page.
-         "Document" or "Home" is not descriptive. -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- ===== PAGE HEADER =====
-         Which element holds introductory content for a page?
-         Inside it:
-         - The page's ONE main heading (your name or topic)
-         - Optional: a short tagline paragraph
-         - A navigation menu: which element wraps navigation links?
-           Hint: a list of links works well here. Use href="#some-id"
-           to jump to a section that has id="some-id". -->
     <header>
-        <h1>All There is to Know About the One and Only Allison</h1>
+        <h1 id="page-title">All There is to Know About the One and Only Allison</h1>
 
         <nav>
             <ul>
@@ -51,7 +23,7 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="content-card">
             <h2>About Me:</h2>
             <figure>
                 <img src="sourdough-loaf.svg" alt="Sourdough Loaf">
@@ -59,7 +31,7 @@
             </figure>
             <p>Not only do I like to make sourdough bread, but also homemade butter, homemade ground hamburger, and homemade summer sausages.</p>
         </section>
-        <section id="favorites">
+        <section id="favorites" class="content-card">
             <h2>My Favorites</h2>
             <ol>
                 <li><strong>Color: </strong>Purple</li>
@@ -71,7 +43,7 @@
             </ol>
         </section>
 
-        <section id="hobbies">
+        <section id="hobbies" class="content-card">
             <h2>My Hobbies</h2>
             <ul>
                 <li>Reading</li>
@@ -82,7 +54,7 @@
             </ul>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="content-card">
             <h2>My Projects</h2>
             <ol>
                 <li>
