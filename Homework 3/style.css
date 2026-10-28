@@ -23,6 +23,11 @@ p {
     border-bottom: 2px solid #967bb6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .content-card {
     margin: 0;
     padding: 20px;
@@ -45,7 +50,5 @@ p {
 @media (min-width: 1200px) {
     .card-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        max-width: 1200px;
-        margin: 0 auto;
     }
 }
