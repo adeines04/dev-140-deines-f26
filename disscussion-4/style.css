@@ -1,0 +1,142 @@
+/* ============================================================
+   DEV.140 — Discussion 4: Layouts for Every Screen (Starter)
+   ============================================================
+   The top part is already done (it's where Homework 2 left off).
+   You'll fill in the TODOs during the two code-alongs.
+
+   Test at three widths with DevTools (F12, then Ctrl+Shift+M,
+   or Cmd+Shift+M on a Mac):
+     320px  = phone
+     768px  = tablet
+     1200px = desktop
+   ============================================================ */
+
+
+/* ---------- ALREADY DONE (from Homework 2) ---------- */
+
+body {
+  background-color: #fdf6ec;
+  color: #3b2a1a;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;   /* stops the page getting too wide on big screens */
+  margin: 0 auto;      /* centers the page */
+  padding: 0 16px;     /* a little space at the edges on phones */
+}
+
+h1,
+h2 {
+  color: #8b5a2b;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #8b5a2b;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+
+/* ---------- EXAMPLE 1: PUT THE CARDS IN A GRID ----------
+   .card-grid is the box that HOLDS the four cards (look in index.html).
+   Grid rules go on the HOLDER, not on each card.
+
+   1fr means "one equal share" of the space.
+   So 1fr 1fr 1fr 1fr = four equal columns.
+*/
+
+.card-grid {
+  display: grid;
+  grid-template-columns: ifr;
+  gap: 16px;
+}
+
+
+/* ---------- ON YOUR OWN (after class): NAV LINKS IN A ROW ----------
+   Flexbox lines things up in a single row. Perfect for nav links.
+   Again, the rule goes on the HOLDER: the <ul>, not each <li>.
+*/
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;   /* (lets links drop to a new line if they don't fit) */
+  gap: 16px; 
+  list-style: none;  /* (removes the bullet dots) */
+  padding: 0;
+}
+
+
+/* ---------- EXAMPLE 2: MAKE IT WORK ON EVERY SCREEN ----------
+   Step 1: In DevTools, set the width to 320px.
+           Four columns don't fit, and the photo sticks out the side!
+
+   Step 2: Stop the photo from ever being wider than the screen.
+*/
+
+img {
+  max-width: 100%;
+  height: auto;    /* (keeps the photo's shape) */
+}
+
+/*
+   Step 3: Scroll up to Example 1. Change the columns to just ONE: 1fr
+           That's the phone layout. Phone comes first.
+
+   Step 4: Add rules for bigger screens with media queries.
+           A media query asks the browser a question:
+             "Is the screen at least ___ px wide?"
+           YES: it uses the rules inside.  NO: it skips them.
+
+           So you can SEE which media query is working, each
+           screen size also gets its own background color:
+
+             Screen                    Columns   Background
+             Phone   (under 768px)     1         cream (already set on body)
+             Tablet  (768px and up)    2         #e3eefa  light blue
+             Desktop (1200px and up)   4         #e6f2e1  light green
+
+           (The colors are just to help you see it. For the homework,
+           the columns changing is what counts as a layout change.)
+
+   Keep media queries at the BOTTOM of this file.
+   Watch out: each one needs TWO closing braces } }
+*/
+
+/* TODO: Tablet. Write a media query for (min-width: 768px).
+         Inside it:   body        -> background-color: #e3eefa;
+                      .card-grid  -> 2 equal columns            */
+
+@media (min-width: 768px) {
+  body {
+    background-color: #e3eefa;
+  }
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* TODO: Desktop. Write a media query for (min-width: 1200px).
+         Inside it:   body        -> background-color: #e6f2e1;
+                      .card-grid  -> 4 equal columns            */
+
+@media (min-width: 1200px) {
+  body {
+    background-color: #e6f2e1;
+  }
+  .card-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

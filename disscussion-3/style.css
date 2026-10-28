@@ -1,0 +1,52 @@
+/* ============================================================
+   DEV.140 — Discussion 3: Styling with CSS (Starter Template)
+   ============================================================
+   This file only works once index.html links it:
+     <link rel="stylesheet" href="style.css">
+   Save and refresh the browser after every change.
+
+   Every rule has the same shape:
+     selector {
+       property: value;
+     }
+   ============================================================ */
+
+
+/* ---------- PART 1: COLORS ----------
+   Pick 2-3 colors that go together:
+     Background:  #______
+     Text:        #______
+     Headings:    #______
+*/
+
+body {
+  /* TODO: background-color */
+  /* TODO: color (the text color) */
+}
+
+h1,
+h2 {
+  /* TODO: color */
+}
+
+
+/* ---------- PART 2: FONT SIZES ----------
+   1rem = the browser's default size (usually 16px).
+   h1 should be the biggest, then h2.
+*/
+
+h1 {
+  /* TODO: font-size */
+}
+
+h2 {
+  /* TODO: font-size */
+}
+
+
+/* ---------- PART 3: TYPE SELECTOR FOR <p> ----------
+   A type selector is just the tag name, without the < >.
+   p { } styles EVERY <p> on the page at once.
+*/
+
+/* TODO: write a p { } rule that sets font-size and line-height */
