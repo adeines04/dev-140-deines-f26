@@ -65,7 +65,7 @@ nav a {
     body {
         background-color: #e6f2e1;
     }
-    .project-grid {
+    .card-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
