@@ -47,7 +47,7 @@ nav a: hover, nav a: focus {
 }
 
 .card {
-    background-color: #80669d;
+    background-color: #3c004d;
     color: #ffffff;
     padding: 16px;
     border: 2px solid #e5e7eb;
@@ -57,7 +57,7 @@ nav a: hover, nav a: focus {
 
 @media (min-width: 768px) {
     body {
-        background-color: #e3eefa;
+        background-color: #3c004d;
     } 
     .card-grid {
         grid-template-columns: 1fr 1fr;
@@ -66,7 +66,7 @@ nav a: hover, nav a: focus {
 
 @media (min-width: 1200px) {
     body {
-        background-color: #e6f2e1;
+        background-color: #3c004d;
     }
     .card-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
