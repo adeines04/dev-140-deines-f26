@@ -36,10 +36,6 @@ nav a {
     font-weight: bold;
 }
 
-nav a: hover, nav a: focus {
-    color: #f0e6ff;
-}
-
 .card-grid {
     display: grid;
     grid-template-columns: 1fr;
