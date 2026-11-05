@@ -36,7 +36,7 @@ nav a {
     font-weight: bold;
 }
 
-nab a: hover, nav a: focus {
+nav a: hover, nav a: focus {
     color: #f0e6ff;
 }
 
