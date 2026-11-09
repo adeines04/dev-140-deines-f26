@@ -26,10 +26,14 @@ p {
 nav ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
     margin: 8px 0 0 0;
     padding: 0;
     list-style: none;
+}
+
+nav li {
+    list-style-type: none;
 }
 
 nav a {
