@@ -65,16 +65,19 @@ nav a:focus, nav a:hover {
 .contact-form fieldset {
     border: 2px solid #a855f7;
     border-radius: 8px;
-    padding: 20px;
+    padding: 24px;
     margin-top: 16px;
-    background-color: #3c004d;
+    background-color: #ffffff;
+    color: #1a0022;
 }
 
 .contact-form legend {
     font-family: 'Poppins', Helvetica, sans-serif;
     font-weight: bold;
-    padding: 0 8px;
+    padding: 4px 12px;
+    background-color: #3c004d;
     color: #ffffff;
+    border-radius: 4px;
 }
 
 .form-group {
@@ -86,35 +89,36 @@ nav a:focus, nav a:hover {
 .form-group label {
     font-weight: 600;
     margin-bottom: 6px;
-    color: #f0e6ff;
+    color: #362a00;
 }
 
 .form-group input, .form-group textarea {
     padding: 10px;
-    border: 2px solid #a855f7;
+    border: 2px solid #3c004d;
     border-radius: 4px;
-    background-color: #2a0036;
-    color: #ffffff;
+    background-color: #f9f5ff;
+    color: #1a0022;
     font-size: 1rem;
 }
 
 .form-group input:focus, .form-group textarea:focus {
-  outline: 3px solid #ffd700;
+    outline: 3px solid #ffd700;
+    border-color: #a855f7;
 }
 
 .required {
-  color: #ffd700;
+  color: #b91c1c;
 }
 
 .error-message {
   display: none;
-  color: #ffb3b3;
+  color: #b91c1c;
   font-size: 0.9rem;
   margin-top: 4px;
 }
 
 .btn-submit {
-  background-color: #a855f7;
+  background-color: #3c004d;
   color: #ffffff;
   font-weight: bold;
   padding: 12px 24px;
@@ -124,7 +128,7 @@ nav a:focus, nav a:hover {
 }
 
 .btn-submit:hover, .btn-submit:focus {
-  background-color: #c084fc;
+  background-color: #a855f7;
   outline: 3px solid #ffd700;
 }
 
