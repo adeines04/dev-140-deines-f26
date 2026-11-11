@@ -38,8 +38,13 @@ nav li {
 
 nav a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
+}
+
+nav a:focus, nav a:hover {
+    outline: 3px solid #ffd700;
+    outline-offset: 2px;
 }
 
 .card-grid {
@@ -51,10 +56,76 @@ nav a {
 .card {
     background-color: #3c004d;
     color: #ffffff;
-    padding: 16px;
-    border: 2px solid #e5e7eb;
+    padding: 20px;
+    border: 2px solid #a855f7;
     border-radius: 8px;
     margin-bottom: 16px;
+}
+
+.contact-form fieldset {
+    border: 2px solid #a855f7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 16px;
+    background-color: #3c004d;
+}
+
+.contact-form legend {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #ffffff;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #f0e6ff;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 2px solid #a855f7;
+    border-radius: 4px;
+    background-color: #2a0036;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  outline: 3px solid #ffd700;
+}
+
+.required {
+  color: #ffd700;
+}
+
+.error-message {
+  display: none;
+  color: #ffb3b3;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.btn-submit {
+  background-color: #a855f7;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover, .btn-submit:focus {
+  background-color: #c084fc;
+  outline: 3px solid #ffd700;
 }
 
 @media (min-width: 768px) {
